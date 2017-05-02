@@ -1,0 +1,12 @@
+
+{
+    "resultCount":3,
+    "results": [
+                {
+                "productID": 111, "price": 250, "productName": "Carrier bag", "productShortName": "Carrier", "productDescription": "Our Mountain Briefcase is the ultimate shape changing, go to work, bum around town, travel the world, do it all every day carry.", "productShortDescription": "Navy blue and Brown soft leather", "colors": ["blue", "brown"], "height": 14, "width": 15, "depth": 8, "rating": 0, "quantity": 11, "shipping": "freeWorldWide", "imageName": "Carrier", "bigImageName": "Carrier_Big"},
+                {
+                "productID": 222, "price": 75, "productName": "Urbanito", "productShortName": "Urbanito", "productDescription": "Our Urbanito Biker basics bag is the ultimate shape changing, go to ride, travel the world", "productShortDescription": "Biker basics", "colors": ["blue", "green", "orange"], "height": 13, "width": 16, "depth": 8, "rating": 0, "quantity": 15, "shipping": "freeWorldWide", "imageName": "Urbanito", "bigImageName": "Urbanito_Big"},
+                {
+                "productID": 333, "price": 175, "productName": "Travol", "productShortName": "Travol", "productDescription": "Our Soft leather bag is the ultimate shape changing, go to work, bum around town, travel the world, do it all every day carry.", "productShortDescription": "Soft leather bag", "colors": ["brown"], "height": 13, "width": 16, "depth": 8, "rating": 0, "quantity": 0, "shipping": "freeWorldWide", "imageName": "Travol", "bigImageName": "Travol_Big"}
+                ]
+}

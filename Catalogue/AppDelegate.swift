@@ -13,9 +13,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // MARK: Creating rootViewController from CatalogueViewController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let catalogueViewController = mainStoryboard.instantiateInitialViewController() as! CatalogueViewController
+        CatalogueWireFrame.assembleCatalogueModule(with: catalogueViewController)
+        let rootNavigationController = UINavigationController(rootViewController: catalogueViewController)
+        
+        self.window?.rootViewController = rootNavigationController
+        self.window?.makeKeyAndVisible()
+        
+        // MARK: Customazing the Appearance of Navigation Bar
+        UINavigationBar.appearance().barTintColor = UIColor(red: 30.0/255.0, green: 151.0/255.0, blue: 115.0/255.0, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: barFont]
+        }
+
         return true
     }
 

@@ -1,0 +1,27 @@
+## OS X Finder
+.DS_Store
+
+## Build generated
+build/
+DerivedData
+
+## Various settings
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.xcworkspace
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+# Swift Package Manager
+.build/
+
+# Pod
+Pods/
+Podfile.lock
