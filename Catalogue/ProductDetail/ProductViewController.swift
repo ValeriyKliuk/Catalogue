@@ -18,8 +18,12 @@ final class ProductViewController: UIViewController, UITableViewDataSource, UITa
         super.viewDidLoad()
 
         title = productViewModel?.productName
-        productDetailTableView.rowHeight = UITableViewAutomaticDimension
+        productDetailTableView.rowHeight = UITableView.automaticDimension
         productDetailTableView.estimatedRowHeight = 44.0
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+          return .lightContent
     }
 
     override func didReceiveMemoryWarning() {

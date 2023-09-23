@@ -28,8 +28,8 @@ class CatalogueAPIDataManager: CatalogueAPIDataManagerInputProtocol
                 return
             }
             
-            let json = SwiftyJSON.JSON(data: data)
-            let results = json["results"].array?.map { return CatalogueItem.build(from: $0) }
+            let json = try? SwiftyJSON.JSON(data: data)
+            let results = json?["results"].array?.map { return CatalogueItem.build(from: $0) }
             if results != nil && (results?.count)! > 0 {
                 completion(results, nil)
             } else {
@@ -93,6 +93,8 @@ class MockTask: URLSessionDataTask {
 protocol SessionProtocol {
     func dataTask(with url: URL, completionHandler: @escaping(Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
+
+
 
 extension URLSession: SessionProtocol {}
 
