@@ -1,15 +1,10 @@
-
-
-Catalogue: Add products to the Wish list
-========================================
-
+# Catalogue: Add products to the Wish list
 
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)
 
 ## Requirements
 
-* Xcode 8.3.2
-* Swift 3.1
+Xcode 14.2
 
 ## Installation
 
@@ -22,7 +17,7 @@ These are currently the supported options:
 `Podfile` contains the following frameworks
 
 ```
-pod 'SwiftyJSON', '~> 3.1.4'
+pod 'SwiftyJSON', '~> 4.0'
 
 ```
 
@@ -36,10 +31,8 @@ $  pod install
 
 Open Catalogue.xcworkspace and hit run.
 
-Sources
--------
+## Sources
 
 [Architecting iOS Apps with VIPER](https://www.objc.io/issues/13-architecture/viper/)
-
 
 [VIPER module generator](https://github.com/pepibumur/viper-module-generator)
