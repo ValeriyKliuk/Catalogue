@@ -17,17 +17,15 @@ Xcode 14.2
 
 ## Installation
 
-Contains 'SwiftyJSON'' framework
-
-These are currently the supported options:
+Contains 'SwiftyJSON' and 'SVProgressHUD' frameworks
 
 ### [COCOAPODS](https://cocoapods.org/)
 
-`Podfile` contains the following frameworks
+`Podfile` contains the following framework's dependencies
 
 ```
 pod 'SwiftyJSON', '~> 4.0'
-
+pod 'SVProgressHUD', '~> 2.2.5'
 ```
 
 `Run` this command before using the project
@@ -35,8 +33,6 @@ pod 'SwiftyJSON', '~> 4.0'
 ```bash
 $  pod install
 ```
-
-### Manual
 
 Open Catalogue.xcworkspace and hit run.
 
