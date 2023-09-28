@@ -13,11 +13,6 @@
 		3310BE7C1EB5F0450005D8BE /* CatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE7B1EB5F0450005D8BE /* CatalogueViewController.swift */; };
 		3310BE7E1EB5F2080005D8BE /* catalogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 3310BE7D1EB5F2080005D8BE /* catalogue.json */; };
 		3310BE7F1EB5FCCD0005D8BE /* catalogue.json in Resources */ = {isa = PBXBuildFile; fileRef = 3310BE7D1EB5F2080005D8BE /* catalogue.json */; };
-		3310BE8C1EB6267B0005D8BE /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE831EB6267B0005D8BE /* SVIndefiniteAnimatedView.m */; };
-		3310BE8D1EB6267B0005D8BE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE851EB6267B0005D8BE /* SVProgressAnimatedView.m */; };
-		3310BE8E1EB6267B0005D8BE /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3310BE871EB6267B0005D8BE /* SVProgressHUD.bundle */; };
-		3310BE8F1EB6267B0005D8BE /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE891EB6267B0005D8BE /* SVProgressHUD.m */; };
-		3310BE901EB6267B0005D8BE /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE8B1EB6267B0005D8BE /* SVRadialGradientLayer.m */; };
 		3310BE971EB6310F0005D8BE /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3310BE951EB6310F0005D8BE /* Detail.storyboard */; };
 		3310BE9A1EB631D30005D8BE /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE991EB631D30005D8BE /* WishListController.swift */; };
 		3310BE9C1EB633540005D8BE /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE9B1EB633540005D8BE /* ProductViewController.swift */; };
@@ -64,16 +59,6 @@
 		3310BE791EB582450005D8BE /* Shipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
 		3310BE7B1EB5F0450005D8BE /* CatalogueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
 		3310BE7D1EB5F2080005D8BE /* catalogue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalogue.json; sourceTree = "<group>"; };
-		3310BE821EB6267B0005D8BE /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		3310BE831EB6267B0005D8BE /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		3310BE841EB6267B0005D8BE /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		3310BE851EB6267B0005D8BE /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		3310BE861EB6267B0005D8BE /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		3310BE871EB6267B0005D8BE /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		3310BE881EB6267B0005D8BE /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		3310BE891EB6267B0005D8BE /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
-		3310BE8A1EB6267B0005D8BE /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		3310BE8B1EB6267B0005D8BE /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
 		3310BE941EB626F70005D8BE /* Catalogue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Catalogue-Bridging-Header.h"; sourceTree = "<group>"; };
 		3310BE961EB6310F0005D8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		3310BE991EB631D30005D8BE /* WishListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
@@ -142,31 +127,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		3310BE801EB6264B0005D8BE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3310BE811EB6267B0005D8BE /* SVProgressHUD */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		3310BE811EB6267B0005D8BE /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				3310BE821EB6267B0005D8BE /* SVIndefiniteAnimatedView.h */,
-				3310BE831EB6267B0005D8BE /* SVIndefiniteAnimatedView.m */,
-				3310BE841EB6267B0005D8BE /* SVProgressAnimatedView.h */,
-				3310BE851EB6267B0005D8BE /* SVProgressAnimatedView.m */,
-				3310BE861EB6267B0005D8BE /* SVProgressHUD-Prefix.pch */,
-				3310BE871EB6267B0005D8BE /* SVProgressHUD.bundle */,
-				3310BE881EB6267B0005D8BE /* SVProgressHUD.h */,
-				3310BE891EB6267B0005D8BE /* SVProgressHUD.m */,
-				3310BE8A1EB6267B0005D8BE /* SVRadialGradientLayer.h */,
-				3310BE8B1EB6267B0005D8BE /* SVRadialGradientLayer.m */,
-			);
-			path = SVProgressHUD;
-			sourceTree = "<group>";
-		};
 		3310BE981EB6312E0005D8BE /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +167,6 @@
 				33F270EF1EB551F600ABF8EB /* Catalogue */,
 				3310BE741EB581BA0005D8BE /* Classes */,
 				3310BE981EB6312E0005D8BE /* ProductDetail */,
-				3310BE801EB6264B0005D8BE /* Frameworks */,
 				33F270CF1EB5515500ABF8EB /* AppDelegate.swift */,
 				33F270D31EB5515500ABF8EB /* Main.storyboard */,
 				3310BE951EB6310F0005D8BE /* Detail.storyboard */,
@@ -417,7 +376,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3310BE8E1EB6267B0005D8BE /* SVProgressHUD.bundle in Resources */,
 				336084551EB838D900AFB3AA /* WhishListFooterView.xib in Resources */,
 				33F270DA1EB5515500ABF8EB /* LaunchScreen.storyboard in Resources */,
 				33F270D71EB5515500ABF8EB /* Assets.xcassets in Resources */,
@@ -463,10 +421,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Catalogue/Pods-Catalogue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,17 +460,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3310BE7C1EB5F0450005D8BE /* CatalogueViewController.swift in Sources */,
-				3310BE8C1EB6267B0005D8BE /* SVIndefiniteAnimatedView.m in Sources */,
 				333FCEAE1EB6D5590096AC16 /* ProductDetailTableViewCell.swift in Sources */,
-				3310BE8F1EB6267B0005D8BE /* SVProgressHUD.m in Sources */,
-				3310BE901EB6267B0005D8BE /* SVRadialGradientLayer.m in Sources */,
 				333FCEA81EB6C48D0096AC16 /* CatalogueCollectionViewCell.swift in Sources */,
 				3310BE9C1EB633540005D8BE /* ProductViewController.swift in Sources */,
 				333FCEAA1EB6D4D70096AC16 /* WishListTableViewCell.swift in Sources */,
 				33F271071EB551F600ABF8EB /* CatalogueWireFrame.swift in Sources */,
 				333FCEB01EB6D5750096AC16 /* ProductRateTableViewCell.swift in Sources */,
 				3360844B1EB8095500AFB3AA /* RatingControl.swift in Sources */,
-				3310BE8D1EB6267B0005D8BE /* SVProgressAnimatedView.m in Sources */,
 				33F271031EB551F600ABF8EB /* CatalogueItem.swift in Sources */,
 				3310BE781EB582090005D8BE /* ProductColor.swift in Sources */,
 				3360844D1EB818E800AFB3AA /* ProductViewModel.swift in Sources */,

@@ -7,6 +7,7 @@ target 'Catalogue' do
 
   # Pods for Catalogue
     pod 'SwiftyJSON', '~> 4.0'
+    pod 'SVProgressHUD', '~> 2.2.5'
 
   target 'CatalogueTests' do
     inherit! :search_paths

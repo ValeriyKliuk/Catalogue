@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class CatalogueViewController: UIViewController, CatalogueViewProtocol, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDataSource, UITableViewDelegate, WhishListFooterViewDelegate {
 
