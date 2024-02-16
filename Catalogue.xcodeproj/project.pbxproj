@@ -276,7 +276,6 @@
 				33F270C81EB5515500ABF8EB /* Sources */,
 				33F270C91EB5515500ABF8EB /* Frameworks */,
 				33F270CA1EB5515500ABF8EB /* Resources */,
-				AFD3B6B598C3943D0080E1E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,25 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AFD3B6B598C3943D0080E1E1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33F270C81EB5515500ABF8EB /* Sources */ = {
