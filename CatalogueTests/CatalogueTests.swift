@@ -42,8 +42,8 @@ class CatalogueTests: XCTestCase {
         let bundle = Bundle(for: type(of: self))
         if let filepath = bundle.path(forResource: "catalogue", ofType: "json"){
             if let data = FileManager.default.contents(atPath: filepath) {
-                let json = SwiftyJSON.JSON(data: data)
-                let results = json["results"].array?.map { return CatalogueItem.build(from: $0) }
+                let json = try? SwiftyJSON.JSON(data: data)
+                let results = json?["results"].array?.map { return CatalogueItem.build(from: $0) }
                 if let results = results {
                     results.forEach({ (i: CatalogueItem) in
                         print(i)
