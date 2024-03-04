@@ -67,7 +67,6 @@
 		3310BE791EB582450005D8BE /* Shipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
 		3310BE7B1EB5F0450005D8BE /* CatalogueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogueViewController.swift; sourceTree = "<group>"; };
 		3310BE7D1EB5F2080005D8BE /* catalogue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalogue.json; sourceTree = "<group>"; };
-		3310BE941EB626F70005D8BE /* Catalogue-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Catalogue-Bridging-Header.h"; sourceTree = "<group>"; };
 		3310BE961EB6310F0005D8BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		3310BE991EB631D30005D8BE /* WishListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
 		3310BE9B1EB633540005D8BE /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
@@ -215,7 +214,6 @@
 				33F270D81EB5515500ABF8EB /* LaunchScreen.storyboard */,
 				33F270DB1EB5515500ABF8EB /* Info.plist */,
 				3310BE7D1EB5F2080005D8BE /* catalogue.json */,
-				3310BE941EB626F70005D8BE /* Catalogue-Bridging-Header.h */,
 			);
 			path = Catalogue;
 			sourceTree = "<group>";
@@ -629,7 +627,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.kliuk.Catalogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Catalogue/Catalogue-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -648,7 +645,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ca.kliuk.Catalogue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Catalogue/Catalogue-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
