@@ -8,15 +8,35 @@
 
 import SwiftUI
 
-@available(iOS 16.0, *)
+@available(iOS 17.0, *)
 struct ContentView: View {
     @StateObject private var modelData = ModelData()
     
+#if os(iOS)
+    @Environment(\.horizontalSizeClass) private var sizeClass
+#endif
     var body: some View {
         NavigationStack {
-            List(modelData.productWrapper.results) { product in
-                Text(product.productName)
-                
+            ScrollView {
+                Section("Product catalogue") {
+                    
+                    if modelData.productWrapper.results.isEmpty {
+                        ContentUnavailableView("No products", systemImage: "cart.fill.badge.questionmark")
+                    } else {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 10.0) {
+                                ForEach(modelData.productWrapper.results) { product in
+                                    ProductCellView(product: product)
+                                }
+                            }
+                            .scrollTargetLayout()
+                        }
+                        .scrollTargetBehavior(.viewAligned)
+                        .scrollIndicators(.hidden)
+                        .contentMargins(sizeClass == .regular ? 20 : 10, for: .scrollContent)
+                        .listRowInsets(EdgeInsets())
+                    }
+                }
             }
             .navigationTitle("TASCH")
         }

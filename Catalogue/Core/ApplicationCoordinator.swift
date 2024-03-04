@@ -13,7 +13,7 @@ class ApplicationCoordinator: Coordinator {
     var window: UIWindow
     
     func start() {
-        if #available(iOS 16.0, *) {
+        if #available(iOS 17.0, *) {
             let contentView = ContentView()
 
             window.rootViewController = UIHostingController(rootView: contentView)
