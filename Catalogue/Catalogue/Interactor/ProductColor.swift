@@ -9,7 +9,7 @@
 import Foundation
 
 /// Product Color
-enum ProductColor {
+enum ProductColor: String, Codable {
     /// Blue
     case blue
     /// Brown
