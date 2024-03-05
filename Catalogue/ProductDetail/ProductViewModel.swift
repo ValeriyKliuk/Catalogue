@@ -39,7 +39,7 @@ class ProductViewModel {
         productPrice = "$ \(product.price) "
         productName = product.productName
         
-        shippingMethod = Utils.convert(shipping: product.shipping)
+        shippingMethod = product.shipping.description
         
         fullDescription = product.productDescription
         
@@ -49,7 +49,7 @@ class ProductViewModel {
         bigImage = product.bigImageName
         productID = product.productID
         
-        isNew = WishListController.shared.isWishListHasProduct(id: product.productID)
+        isNew = WishListController.shared.isNew(id: product.productID)
     }
     
     func getCurrentProduct() -> CatalogueItem {

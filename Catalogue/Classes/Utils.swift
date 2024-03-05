@@ -36,16 +36,6 @@ class Utils {
         }
     }
     
-    /// Converts Shipping Enumeration to the String
-    static func convert(shipping value: Shipping) -> String {
-        switch value {
-        case .freeWorldWide:
-            return "Free Shipping World Wide"
-        default:
-            return "Free Quebec Shipping"
-        }
-    }
-    
     /// Converting inches to centimeters
     static func convertToCentimeters(from inches: Int ) -> Int {
         let result: Double = Double(inches) * 2.64

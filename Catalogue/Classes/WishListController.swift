@@ -16,30 +16,16 @@ class WishListController {
     // not reachable from other classes
     private init() {}
     
-    var wishListItems: [Product] = [] {
-        didSet {
-            updateTotal()
+    var wishListItems: [Product] = []
+    
+    var total: Int {
+        wishListItems.reduce(0) { partialResult, product in
+            partialResult + product.price
         }
     }
     
-    var total: Int = 0
-    
-    func updateTotal() {
-        var sum: Int = 0
-        for product in wishListItems {
-            sum += product.price
-        }
-        self.total = sum
-    }
-    
-    func isWishListHasProduct(id searchId: Int) -> Bool {
-        let result: Bool = true
-        for product in wishListItems {
-            if product.productID == searchId {
-                return false
-            }
-        }
-        return result
+    func isNew(id searchId: Int) -> Bool {
+        wishListItems.index(where: {$0.productID == searchId}) == nil
     }
     
     func removeFromWishList(productId searchId: Int) {
