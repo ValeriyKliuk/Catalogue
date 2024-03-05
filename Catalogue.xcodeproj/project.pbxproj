@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330A77202B96B64A006182C8 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A771F2B96B64A006182C8 /* ProductDetailsView.swift */; };
 		3310BE761EB581D90005D8BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE751EB581D90005D8BE /* Utils.swift */; };
 		3310BE781EB582090005D8BE /* ProductColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE771EB582090005D8BE /* ProductColor.swift */; };
 		3310BE7A1EB582450005D8BE /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE791EB582450005D8BE /* Shipping.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		330A771F2B96B64A006182C8 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		3310BE751EB581D90005D8BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		3310BE771EB582090005D8BE /* ProductColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductColor.swift; sourceTree = "<group>"; };
 		3310BE791EB582450005D8BE /* Shipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				33FE63D32B962AEE00C76E76 /* ProductCellView.swift */,
+				330A771F2B96B64A006182C8 /* ProductDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				332600B32B95625A00FC7941 /* SceneDelegate.swift in Sources */,
 				3310BE7A1EB582450005D8BE /* Shipping.swift in Sources */,
 				33F271041EB551F600ABF8EB /* CataloguePresenter.swift in Sources */,
+				330A77202B96B64A006182C8 /* ProductDetailsView.swift in Sources */,
 				332600B92B9567AA00FC7941 /* Product.swift in Sources */,
 				333FCEB41EB6D66D0096AC16 /* CheckOutTableViewCell.swift in Sources */,
 				332600BE2B9568B300FC7941 /* ProductWrapper.swift in Sources */,

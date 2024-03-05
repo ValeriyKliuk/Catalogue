@@ -7,9 +7,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 /// Product Color
-enum ProductColor: String, Codable {
+enum ProductColor: String, Codable, Identifiable {
+    
     /// Blue
     case blue
     /// Brown
@@ -18,4 +20,22 @@ enum ProductColor: String, Codable {
     case green
     /// Orange
     case orange
+    
+    var id: ProductColor {
+        self
+    }
+
+    @available(iOS 17.0, *)
+    var shapeStyle: some ShapeStyle {
+        switch self {
+        case .blue:
+            return Color.blue
+        case .brown:
+            return Color.brown
+        case .green:
+            return Color.green
+        case .orange:
+            return Color.orange
+        }
+    }
 }

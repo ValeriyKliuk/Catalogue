@@ -26,7 +26,11 @@ struct ContentView: View {
                         ScrollView(.horizontal) {
                             HStack(spacing: 10.0) {
                                 ForEach(modelData.productWrapper.results) { product in
-                                    ProductCellView(product: product)
+                                    NavigationLink {
+                                        ProductDetailsView(product: product)
+                                    } label: {
+                                        ProductCellView(product: product)
+                                    }
                                 }
                             }
                             .scrollTargetLayout()
