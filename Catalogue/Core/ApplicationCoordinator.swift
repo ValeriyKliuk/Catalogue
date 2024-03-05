@@ -19,7 +19,6 @@ class ApplicationCoordinator: Coordinator {
             window.rootViewController = UIHostingController(rootView: contentView)
         } else {
             // MARK: Creating rootViewController from CatalogueViewController
-            self.window = UIWindow(frame: UIScreen.main.bounds)
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let catalogueViewController = mainStoryboard.instantiateInitialViewController() as! CatalogueViewController
             CatalogueWireFrame.assembleCatalogueModule(with: catalogueViewController)
@@ -33,7 +32,7 @@ class ApplicationCoordinator: Coordinator {
             if let barFont = UIFont(name: "Avenir-Light", size: 24.0) {
                 UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: barFont]
             }
-            self.window.rootViewController = rootNavigationController
+            window.rootViewController = rootNavigationController
         }
   
         window.makeKeyAndVisible()
