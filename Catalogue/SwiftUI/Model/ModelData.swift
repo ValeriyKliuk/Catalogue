@@ -13,7 +13,6 @@ final class ModelData: ObservableObject {
     @Published var productWrapper: ProductWrapper = load("catalogue.json")
 }
 
-
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
     

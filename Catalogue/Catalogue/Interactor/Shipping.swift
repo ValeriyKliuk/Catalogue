@@ -9,9 +9,18 @@
 import Foundation
 
 /// Shipping Method Enumeration
-enum Shipping {
+enum Shipping: String, Codable {
     /// Québec only
     case quebecOnly
     /// Free Shipping World Wide
     case freeWorldWide
+
+    var description: String {
+        switch self {
+        case .quebecOnly:
+            return "Free Quebec Shipping"
+        case .freeWorldWide:
+            return "Free Shipping World Wide"
+        }
+    }
 }

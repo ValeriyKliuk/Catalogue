@@ -15,7 +15,7 @@ struct ProductCellView: View {
     @Environment(\.horizontalSizeClass) private var sizeClass
 #endif
     
-    var product: Product
+    var product: ProductEntity
     
     var body: some View {
         ZStack(alignment: .bottom) {

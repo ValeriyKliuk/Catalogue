@@ -7,7 +7,7 @@ import Foundation
 import SwiftyJSON
 
 /// CatalogueItem
-struct CatalogueItem: CustomStringConvertible {
+struct CatalogueItem: CustomStringConvertible, Product, Identifiable {
     // MARK: - Attributes
 
     /// Product ID
@@ -44,7 +44,10 @@ struct CatalogueItem: CustomStringConvertible {
     public var description: String {
         return "CatalogueItem: \(productID) \(productName) $\(price))"
     }
-
+    
+    var id: Int {
+        productID
+    }
 }
 
 /// CatalogueItem extension

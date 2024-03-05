@@ -2,40 +2,26 @@
 //  Product.swift
 //  Catalogue
 //
-//  Created by Valeriy Kliuk on 2024-03-03.
+//  Created by Valeriy Kliuk on 2024-03-05.
 //  Copyright © 2024 Valeriy Kliuk. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
-struct Product: Codable, Identifiable {
-    let productID: Int
-    let price: Int
-    let productName: String
-    let productShortName: String
-    let productDescription: String
-    let productShortDescription: String
-    let height: Int
-    let width: Int
-    let depth: Int
-    let rating: Int
-    let quantity: Int
-    let shipping: String
-    let imageName: String
-    let bigImageName: String
-    let colors: [ProductColor]
-    
-    var id: Int {
-        productID
-    }
-    
-    @available(iOS 13.0, *)
-    var image: Image {
-        Image(imageName)
-    }
-    
-    @available(iOS 13.0, *)
-    var bigImage: Image {
-        Image(bigImageName)
-    }
+protocol Product {
+    var productID: Int { get }
+    var price: Int { get }
+    var productName: String { get }
+    var productShortName: String { get }
+    var productDescription: String { get }
+    var productShortDescription: String { get }
+    var height: Int { get }
+    var width: Int { get }
+    var depth: Int { get }
+    var rating: Int { get }
+    var quantity: Int { get }
+    var shipping: Shipping { get }
+    var imageName: String { get }
+    var bigImageName: String { get }
+    var colors: [ProductColor] { get }
 }

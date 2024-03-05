@@ -10,5 +10,5 @@ import Foundation
 
 struct ProductWrapper: Codable {
     let resultCount: Int
-    let results: [Product]
+    let results: [ProductEntity]
 }

@@ -8,20 +8,20 @@
 
 import SwiftUI
 
-@available(iOS 16.0, *)
+@available(iOS 17.0, *)
 struct ProductCardView: View {
     var product: Product
 
     var body: some View {
         VStack {
-            product.bigImage
+            Image(product.bigImageName)
             HStack {
                 Text(product.price, format: .currency(code: "CAD"))
                     .font(.system(size: 32.0))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 VStack {
                     Text("")
-                    Text(product.shipping)
+                    Text(product.shipping.description)
                         .fontWeight(.bold)
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
@@ -29,11 +29,12 @@ struct ProductCardView: View {
             .padding(.top, 16)
             
             Rectangle()
-                .fill(.gray.gradient)
+                .fill(.gray.secondary)
                 .frame(height: 1)
                 .frame(maxWidth: .infinity)
             
             Text(product.productDescription)
+                .padding(.top, 8)
         }
         .padding(16)
         .background(.white)
