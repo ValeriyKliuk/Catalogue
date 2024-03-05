@@ -12,68 +12,32 @@ import SwiftUI
 struct ProductDetailsView: View {
     var product: Product
     
+    @State private var rating: Int?
+    
     var body: some View {
         NavigationStack {
-            VStack( alignment: .center, spacing: 24) {
-                product.bigImage
-                HStack {
-                    Text(product.price, format: .currency(code: "CAD"))
-                        .font(.system(size: 32.0))
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    VStack {
-                        Text("")
-                        Text(product.shipping)
-                            .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                    }
+            ScrollView {
+                VStack( alignment: .center, spacing: 24) {
+                    ProductCardView(product: product)
+                        .padding(.horizontal, 16)
+                    
+                    ProductColorsView(colors: product.colors)
+                        .padding(.horizontal, 16)
+                    
+                    ProductSizeView(height: product.height, width: product.width, depth: product.depth)
+                        .padding(.horizontal, 16)
+                    
+                    ProductRatingView(rating: $rating, title: "Rate the product")
+                        .padding(.horizontal, 16)
+                    
                 }
-                .padding(.top, 16)
-                .padding(.horizontal, 16)
-                
-                Rectangle()
-                    .fill(.gray.gradient)
-                    .frame(height: 1)
-                    .frame(maxWidth: .infinity)
-                
-                Text(product.productDescription)
-                    .padding(.horizontal, 8)
-                
-                HStack(alignment: .top, spacing: 32) {
-                    Text("Colors")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    ForEach(product.colors) { color in
-                            Rectangle()
-                            .fill(color.shapeStyle)
-                            .frame(width: 56, height: 32, alignment: .center)
-                            .clipShape(.rect(cornerRadius: 8))
-                    }
-                }
-                .padding(.horizontal,16)
-                
-                HStack(alignment: .top) {
-                    Text("Size")
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    VStack {
-                        Text("H:\(product.height)\"")
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        Text("W:\(product.width)\"")
-                            .frame(maxWidth: .infinity, alignment: .leading)
-
-                        Text("D:\(product.depth)\"")
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                    }
-                }
-                .padding(.horizontal,16)
-                
             }
-            .frame(maxHeight: .infinity, alignment: .top)
+            .onAppear{
+                self.rating = self.product.rating
+            }
+            .navigationTitle(product.productName)
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle(product.productName)
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
