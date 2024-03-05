@@ -11,9 +11,13 @@ import SwiftUI
 @available(iOS 17.0, *)
 struct ProductDetailsView: View {
     var product: Product
-    
     @State private var rating: Int?
+    @State private var isAdd: Bool = true
     
+    private var actionButtonTitle: String {
+        isAdd ? "Add to wish list" : "Remove from wish list"
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -30,13 +34,16 @@ struct ProductDetailsView: View {
                     ProductRatingView(rating: $rating, title: "Rate the product")
                         .padding(.horizontal, 16)
                     
+                    Spacer(minLength: 8)
                 }
             }
-            .onAppear{
-                self.rating = self.product.rating
-            }
-            .navigationTitle(product.productName)
-            .navigationBarTitleDisplayMode(.inline)
+            
+            ProductActionButtonView(title: actionButtonTitle, isAdd: isAdd)
+                .onAppear{
+                    self.rating = self.product.rating
+                }
+                .navigationTitle(product.productName)
+                .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

@@ -16,7 +16,7 @@ class WishListController {
     // not reachable from other classes
     private init() {}
     
-    var wishListItems: [CatalogueItem] = [] {
+    var wishListItems: [Product] = [] {
         didSet {
             updateTotal()
         }

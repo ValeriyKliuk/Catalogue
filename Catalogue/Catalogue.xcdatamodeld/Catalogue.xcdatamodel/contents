@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CDProductColorEntity" representedClassName="CDProductColorEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="products" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDProductEntity" inverseName="productColors" inverseEntity="CDProductEntity"/>
+    </entity>
+    <entity name="CDProductEntity" representedClassName="CDProductEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="bigImageName" attributeType="String"/>
+        <attribute name="depth" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="height" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imageName" attributeType="String"/>
+        <attribute name="price" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productDescription" attributeType="String"/>
+        <attribute name="productID" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="productName" attributeType="String"/>
+        <attribute name="productShortDescription" attributeType="String"/>
+        <attribute name="productShortName" attributeType="String"/>
+        <attribute name="quantity" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rating" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="width" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="productColors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDProductColorEntity" inverseName="products" inverseEntity="CDProductColorEntity"/>
+        <relationship name="shipping" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDShippingEntity" inverseName="product" inverseEntity="CDShippingEntity"/>
+    </entity>
+    <entity name="CDShippingEntity" representedClassName="CDShippingEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="product" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDProductEntity" inverseName="shipping" inverseEntity="CDProductEntity"/>
+    </entity>
+</model>

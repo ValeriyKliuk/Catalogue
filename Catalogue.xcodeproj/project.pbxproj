@@ -14,6 +14,8 @@
 		330A77292B9780DE006182C8 /* ProductColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A77282B9780DE006182C8 /* ProductColorsView.swift */; };
 		330A772B2B97A1A0006182C8 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A772A2B97A1A0006182C8 /* Product.swift */; };
 		330A772D2B97A88A006182C8 /* CatalogueInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A772C2B97A88A006182C8 /* CatalogueInteractor.swift */; };
+		330A77332B97BC2F006182C8 /* Catalogue.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 330A77312B97BC2F006182C8 /* Catalogue.xcdatamodeld */; };
+		330A77352B97C78A006182C8 /* ProductActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330A77342B97C78A006182C8 /* ProductActionButtonView.swift */; };
 		3310BE761EB581D90005D8BE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE751EB581D90005D8BE /* Utils.swift */; };
 		3310BE781EB582090005D8BE /* ProductColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE771EB582090005D8BE /* ProductColor.swift */; };
 		3310BE7A1EB582450005D8BE /* Shipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3310BE791EB582450005D8BE /* Shipping.swift */; };
@@ -75,6 +77,8 @@
 		330A77282B9780DE006182C8 /* ProductColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductColorsView.swift; sourceTree = "<group>"; };
 		330A772A2B97A1A0006182C8 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		330A772C2B97A88A006182C8 /* CatalogueInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatalogueInteractor.swift; sourceTree = "<group>"; };
+		330A77322B97BC2F006182C8 /* Catalogue.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Catalogue.xcdatamodel; sourceTree = "<group>"; };
+		330A77342B97C78A006182C8 /* ProductActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductActionButtonView.swift; sourceTree = "<group>"; };
 		3310BE751EB581D90005D8BE /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		3310BE771EB582090005D8BE /* ProductColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductColor.swift; sourceTree = "<group>"; };
 		3310BE791EB582450005D8BE /* Shipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shipping.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				330A77212B976EB7006182C8 /* ProductRatingView.swift */,
 				33FE63D32B962AEE00C76E76 /* ProductCellView.swift */,
 				330A77282B9780DE006182C8 /* ProductColorsView.swift */,
+				330A77342B97C78A006182C8 /* ProductActionButtonView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 				33F270D81EB5515500ABF8EB /* LaunchScreen.storyboard */,
 				33F270DB1EB5515500ABF8EB /* Info.plist */,
 				3310BE7D1EB5F2080005D8BE /* catalogue.json */,
+				330A77312B97BC2F006182C8 /* Catalogue.xcdatamodeld */,
 			);
 			path = Catalogue;
 			sourceTree = "<group>";
@@ -414,10 +420,9 @@
 			};
 			buildConfigurationList = 33F270C71EB5515500ABF8EB /* Build configuration list for PBXProject "Catalogue" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -479,6 +484,7 @@
 				33F271031EB551F600ABF8EB /* CatalogueItem.swift in Sources */,
 				330A77222B976EB7006182C8 /* ProductRatingView.swift in Sources */,
 				3310BE781EB582090005D8BE /* ProductColor.swift in Sources */,
+				330A77352B97C78A006182C8 /* ProductActionButtonView.swift in Sources */,
 				3360844D1EB818E800AFB3AA /* ProductViewModel.swift in Sources */,
 				33FE63D42B962AEE00C76E76 /* ProductCellView.swift in Sources */,
 				332600C02B9568E400FC7941 /* ModelData.swift in Sources */,
@@ -495,6 +501,7 @@
 				33F271001EB551F600ABF8EB /* CatalogueAPIDataManager.swift in Sources */,
 				3310BE761EB581D90005D8BE /* Utils.swift in Sources */,
 				33F270D01EB5515500ABF8EB /* AppDelegate.swift in Sources */,
+				330A77332B97BC2F006182C8 /* Catalogue.xcdatamodeld in Sources */,
 				333FCEB71EB770A30096AC16 /* ColoursTableViewCell.swift in Sources */,
 				33F271051EB551F600ABF8EB /* CatalogueProtocols.swift in Sources */,
 				333FCEAC1EB6D5370096AC16 /* ProductTableViewCell.swift in Sources */,
@@ -783,6 +790,19 @@
 			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		330A77312B97BC2F006182C8 /* Catalogue.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				330A77322B97BC2F006182C8 /* Catalogue.xcdatamodel */,
+			);
+			currentVersion = 330A77322B97BC2F006182C8 /* Catalogue.xcdatamodel */;
+			path = Catalogue.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 33F270C41EB5515500ABF8EB /* Project object */;
 }
