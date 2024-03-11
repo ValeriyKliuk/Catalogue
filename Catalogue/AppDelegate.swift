@@ -15,13 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-        if let window = self.window {
-            self.applicationCoordinator = ApplicationCoordinator(window: window)
-            self.applicationCoordinator?.start()
+        if #unavailable(iOS 17.0 ) {
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+
+            if let window = self.window {
+                self.applicationCoordinator = ApplicationCoordinator(window: window)
+                self.applicationCoordinator?.start()
+            }
         }
+
         return true
     }
 
