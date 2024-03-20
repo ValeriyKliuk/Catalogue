@@ -12,10 +12,10 @@ import SwiftUI
 struct ProductDetailsView: View {
     var product: Product
     @State private var rating: Int?
-    @State private var isAdd: Bool = true
+    @State private var isNew: Bool = true
     
     private var actionButtonTitle: String {
-        isAdd ? "Add to wish list" : "Remove from wish list"
+        isNew ? "Add to wish list" : "Remove from wish list"
     }
 
     var body: some View {
@@ -38,7 +38,9 @@ struct ProductDetailsView: View {
                 }
             }
             
-            ProductActionButtonView(title: actionButtonTitle, isAdd: isAdd)
+            ProductActionButtonView(title: actionButtonTitle, isNew: $isNew) {
+                // TODO: add action here
+            }
                 .onAppear{
                     self.rating = self.product.rating
                 }
